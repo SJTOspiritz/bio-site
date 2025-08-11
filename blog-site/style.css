@@ -1,4 +1,4 @@
-/* Neon Dark Theme */
+/* Neon Dark Theme Variables */
 :root {
   --neon-green: #39ff14;
   --dark-bg: #0b0b0b;
@@ -6,6 +6,7 @@
   --card-bg: rgba(30, 30, 30, 0.9);
 }
 
+/* General Styles */
 body {
   margin: 0;
   padding: 0;
@@ -18,7 +19,6 @@ body {
 /* Header */
 .header {
   background: #111;
-  color: var(--neon-green);
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -71,6 +71,42 @@ a {
 
 a:hover {
   color: #00e676;
+}
+
+/* Marketing Section */
+.marketing-ideas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.idea {
+  background-color: #111;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px var(--neon-green);
+}
+
+.idea i {
+  font-size: 2rem;
+  color: var(--neon-green);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.idea h3 {
+  color: var(--neon-green);
+  margin-bottom: 0.5rem;
+}
+
+.idea ul {
+  list-style: square;
+  padding-left: 1.2rem;
+}
+
+.idea ul li {
+  margin-bottom: 0.5rem;
 }
 
 /* Footer */
